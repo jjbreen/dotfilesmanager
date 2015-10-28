@@ -402,7 +402,7 @@ int main(int argc, char **argv) {
 
     if (strncmp(argv[1], "--track", 8) == 0) { // TODO some tweaks on tracking
         if (argc < 4) {
-            printf("invalid number of arguments! Exiting ...\n");
+            perror("invalid number of arguments! Exiting ...");
             return 1;
         }
 
